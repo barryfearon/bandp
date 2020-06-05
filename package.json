@@ -1,0 +1,42 @@
+{
+  "name": "bootstrap-webpack",
+  "version": "1.0.0",
+  "description": "bootstrap webpack",
+  "main": "bundle.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Barry Fearon <bfearon@iowaycorp.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-regular-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "autoprefixer": "^9.7.2",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "compression-webpack-plugin": "^3.1.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "6.0.0",
+    "mini-css-extract-plugin": "0.9.0",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "4.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "3.4.1",
+    "lazysizes": "^5.2.0",
+    "popper.js": "^1.16.0"
+  },
+  "repository": "https://github.com/barryfearon/bandp.git",
+  "homepage": "https://buchananandpitts.im/"
+}
