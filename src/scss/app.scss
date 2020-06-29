@@ -1,6 +1,6 @@
 @import '~bootstrap/scss/functions';
 //@import '~bootstrap/scss/variables';
-@import './gsp-styles/custom-variables';
+@import './custom-variables';
 @import '~bootstrap/scss/mixins';
 
 // All optional:
@@ -36,9 +36,10 @@
 @import "~bootstrap/scss/carousel";
 @import '~bootstrap/scss/utilities';
 @import "~bootstrap/scss/print";
-@import './gsp-styles/typography';
+@import './typography';
 
 // Animation on scroll
 //@import '~animate.css/animate.min.css';
 
 @import './custom.scss';
+@import './services';

@@ -3,6 +3,7 @@ var webpack = require("webpack");
 var BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: path.resolve(__dirname, "src/app.js"),
@@ -41,19 +42,28 @@ module.exports = {
       jQuery: "jquery",
       "window.jQuery": "jquery",
     }),
-
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: "src/assets/index.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: "src/assets/contact.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "services.html",
+      template: "src/assets/services.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "recent-work.html",
+      template: "src/assets/recent-work.html",
+    }),
     new BrowserSyncPlugin({
       host: "localhost",
       port: 3004,
       server: { baseDir: ["dist"] },
     }),
-    // new CompressionPlugin({
-    //   filename: '[path].gz[query]',
-    //   algorithm: 'gzip',
-    //   test: /\.js$|\.css$|\.html$/,
-    //   threshold: 10240,
-    //   minRatio: 0.8,
-    // }),
+   
   ],
 
   module: {
@@ -70,17 +80,10 @@ module.exports = {
               reloadAll: true,
             },
           },
-          // {
-          //   // Adds CSS to the DOM by injecting a `<style>` tag
-          //   loader: "style-loader",
-          // },
           {
             // Interprets `@import` and `url()` like `import/require()` and will resolve them
             loader: "css-loader",
-            options: {
-              url: true,
-              sourceMap: true,
-            },
+            options: { url: false },
           },
           {
             // Loader for webpack to process CSS with PostCSS
@@ -107,9 +110,8 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              context: path.resolve(__dirname, "src/"),
-              outputPath: "/images/gs-group",
-              publicPath: "./images/gs-group",
+              outputPath: "images",
+              publicPath: "src/assets",
             },
           },
         ],

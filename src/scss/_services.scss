@@ -1,0 +1,54 @@
+.preparation {
+  .img-container {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    background: #858289;
+    @include media-breakpoint-up(md) {
+        height: 665px;
+        background: #858289;
+      }
+
+      &.prep {
+          background: url(images/Preparation-Services-800x533.jpg);
+          background-size: cover;
+          background-position: 90%;
+      }
+
+      &.interior {
+        background: url(images/Interior-Painting-Services-1200x900.jpg);
+        background-size: cover;
+        background-position: 90%;
+    }
+
+    &.exterior {
+        background: url(images/ExteriorPainting.jpg);
+        background-size: cover;
+        background-position: 90%;
+    }
+
+    &.wallpaper {
+        background: url(images/Wallpapering-Services-800x533.jpg);
+        background-size: cover;
+        background-position: 90%;
+    }
+
+    
+  }
+//   img {
+//       width: 100%;
+//     transform: scale(2.5) translate3d(-80px, 31px, 0);
+//     @include media-breakpoint-up(sm) {
+//       transform: scale(1.5) translate3d(15px, -40px, 0);
+//     }
+//     @include media-breakpoint-up(md) {
+//         transform: scale(2.6) translate3d(-105px, 80px, 0);
+//       }
+//       @include media-breakpoint-up(lg) {
+//         transform: scale(2) translate3d(-116px, 84px, 0);
+//       }
+//       @include media-breakpoint-up(xl) {
+//         transform: scale(2) translate3d(-105px, 70px, 0);
+//       }
+//   }
+}
