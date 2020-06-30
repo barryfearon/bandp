@@ -19,7 +19,7 @@
       class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
       id="buchanan-pitts-nav"
     >
-      <a class="navbar-brand" href="/index.html">Buchannan & Pitts</a>
+      <a class="navbar-brand btn btn-outline-light" role="button" href="tel:+447624494332">Buchannan & Pitts: Call 07624 494332</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -35,7 +35,16 @@
       <div class="collapse navbar-collapse" id="buchanan-pitts-mobile-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="">Contact Us</a>
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href=""
+              data-toggle="modal"
+              data-target="#contactModal"
+              >Contact Us</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
@@ -46,6 +55,74 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <h5 class="modal-title text-white" id="staticBackdropLabel">Free Quotation</h5>
+            <button
+              type="button"
+              class="close text-white"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="https://formspree.io/xeqrlnzr" method="POST">
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  name="_replyto"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  name="message"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-primary">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <section class="carousel">
       <!-- Add data-ride="carousel" to below div to make it slide -->
@@ -64,8 +141,13 @@
             />
             <div class="image-bg"></div>
             <div class="carousel-caption">
-              <h5>Request A Free Non-Obligation Quote</h5>
-              <a type="button" role="button" class="btn btn-outline-primary"
+              <h3 class="mb-4">Request A Free Non-Obligation Quote</h3>
+              <a
+                type="button"
+                data-toggle="modal"
+                data-target="#contactModal"
+                role="button"
+                class="btn btn-lg btn-outline-primary"
                 >Request Quote</a
               >
             </div>
@@ -78,9 +160,14 @@
             />
             <div class="image-bg"></div>
             <div class="carousel-caption">
-              <h5>Painting and Decorating Work</h5>
-              <h6>View some of our recent painting and decorating work!</h6>
-              <a type="button" role="button" class="btn btn-outline-primary"
+              <h3>Painting and Decorating Work</h3>
+              <h6 class="mb-4">
+                View some of our recent painting and decorating work!
+              </h6>
+              <a
+                type="button"
+                role="button"
+                class="btn btn-lg btn-outline-primary"
                 >Visit Gallery</a
               >
             </div>
@@ -93,35 +180,21 @@
             />
             <div class="image-bg"></div>
             <div class="carousel-caption">
-              <h5>Professional Painting and Decorating Services</h5>
-              <h6>
+              <h3>Professional Painting and Decorating Services</h3>
+              <h6 class="mb-4">
                 Decorating homes and businesses on the Isle of Man for over 40
                 years
               </h6>
-              <a type="button" role="button" class="btn btn-outline-primary"
+              <a
+                type="button"
+                role="button"
+                class="btn btn-outline-primary btn-lg"
+                href="services.html"
                 >Learn More</a
               >
             </div>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselId"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselId"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </section>
     <section class="description">
@@ -182,96 +255,101 @@
         <div class="card-deck text-center">
           <div class="card bg-lightgray border-0">
             <div class="card-body px-0">
-              <svg
-                version="1.1"
-                id="Layer_1"
-                focusable="false"
-                x="0px"
-                y="0px"
-                viewBox="0 0 100 100"
-                style="width: 100px; height: 100px;"
-                xml:space="preserve"
-              >
-                <style type="text/css">
-                  .st0 {
-                    fill: #dc3545;
-                  }
-                  .st1 {
-                    fill: #ffffff;
-                  }
-                </style>
-                <circle class="st0" cx="50" cy="50" r="50" />
-                <path
-                  class="st1"
-                  d="M72.1,14.6H27.9c-2.4,0-4.4,2-4.4,4.4v31h53.1V19C76.5,16.6,74.6,14.6,72.1,14.6z M23.5,58.8
+              <a href="services.html#services-int">
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  focusable="false"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 100 100"
+                  style="width: 100px; height: 100px;"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: #dc3545;
+                    }
+                    .st1 {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <circle class="st0" cx="50" cy="50" r="50" />
+                  <path
+                    class="st1"
+                    d="M72.1,14.6H27.9c-2.4,0-4.4,2-4.4,4.4v31h53.1V19C76.5,16.6,74.6,14.6,72.1,14.6z M23.5,58.8
 	c0,4.9,4,8.8,8.8,8.8h8.8v8.8c0,4.9,4,8.8,8.8,8.8s8.8-4,8.8-8.8v-8.8h8.8c4.9,0,8.8-4,8.8-8.8v-4.4H23.5V58.8z M50,73.2
 	c1.8,0,3.3,1.5,3.3,3.3c0,1.8-1.5,3.3-3.3,3.3s-3.3-1.5-3.3-3.3C46.7,74.7,48.2,73.2,50,73.2z"
-                />
-              </svg>
+                  />
+                </svg>
+              </a>
               <h5 class="card-title pt-4">Interior Painting</h5>
             </div>
           </div>
           <div class="card bg-lightgray border-0">
             <div class="card-body px-0">
-              <svg
-                version="1.1"
-                id="Layer_1"
-                focusable="false"
-                x="0px"
-                y="0px"
-                viewBox="0 0 100 100"
-                style="width: 100px; height: 100px;"
-                xml:space="preserve"
-              >
-                <style type="text/css">
-                  .st0 {
-                    fill: #dc3545;
-                  }
-                  .st1 {
-                    fill: #ffffff;
-                  }
-                </style>
-                <circle class="st0" cx="50" cy="50" r="50" />
-                <path
-                  class="st1"
-                  d="M70.7,33.5V21.1c0-2.3-1.9-4.1-4.1-4.1H21.1c-2.3,0-4.1,1.9-4.1,4.1v12.4c0,2.3,1.9,4.1,4.1,4.1h45.5
+              <a href="services.html#services-ext">
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  focusable="false"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 100 100"
+                  style="width: 100px; height: 100px;"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: #dc3545;
+                    }
+                    .st1 {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <circle class="st0" cx="50" cy="50" r="50" />
+                  <path
+                    class="st1"
+                    d="M70.7,33.5V21.1c0-2.3-1.9-4.1-4.1-4.1H21.1c-2.3,0-4.1,1.9-4.1,4.1v12.4c0,2.3,1.9,4.1,4.1,4.1h45.5
 	C68.8,37.6,70.7,35.8,70.7,33.5z M74.8,25.2v16.5c0,2.3-1.9,4.1-4.1,4.1H50c-4.6,0-8.3,3.7-8.3,8.3v4.1c-2.3,0-4.1,1.9-4.1,4.1v16.5
 	c0,2.3,1.9,4.1,4.1,4.1H50c2.3,0,4.1-1.9,4.1-4.1V62.4c0-2.3-1.9-4.1-4.1-4.1v-4.1h20.7c6.8,0,12.4-5.6,12.4-12.4v-8.3
 	C83.1,28.9,79.4,25.2,74.8,25.2z"
-                />
-              </svg>
-
+                  />
+                </svg>
+              </a>
               <h5 class="card-title pt-4">Exterior Painting</h5>
             </div>
           </div>
           <div class="card bg-lightgray border-0 mb-0">
             <div class="card-body px-0">
-              <svg
-                version="1.1"
-                id="Layer_1"
-                focusable="false"
-                x="0px"
-                y="0px"
-                viewBox="0 0 100 100"
-                style="width: 100px; height: 100px;"
-                xml:space="preserve"
-              >
-                <style type="text/css">
-                  .st0 {
-                    fill: #dc3545;
-                  }
-                  .st1 {
-                    fill: #ffffff;
-                  }
-                </style>
-                <circle class="st0" cx="50" cy="50" r="50" />
-                <path
-                  class="st1"
-                  d="M18.7,20.5c-3,0-5.5,2.5-5.5,5.5v7.4c0,1,0.8,1.8,1.8,1.8h9.2v-9.2C24.2,23,21.7,20.5,18.7,20.5z M42.6,68v-7
+              <a href="services.html#services-wall">
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  focusable="false"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 100 100"
+                  style="width: 100px; height: 100px;"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: #dc3545;
+                    }
+                    .st1 {
+                      fill: #ffffff;
+                    }
+                  </style>
+                  <circle class="st0" cx="50" cy="50" r="50" />
+                  <path
+                    class="st1"
+                    d="M18.7,20.5c-3,0-5.5,2.5-5.5,5.5v7.4c0,1,0.8,1.8,1.8,1.8h9.2v-9.2C24.2,23,21.7,20.5,18.7,20.5z M42.6,68v-7
 	h33.1V31.6c0-6.1-5-11-11-11H26c1.2,1.5,1.9,3.4,1.9,5.5v42.4c0,4.5,4,8,8.6,7.3C40.1,75.1,42.6,71.7,42.6,68z M46.3,64.7v3.7
 	c0,6.1-5,11-11,11h38.7c7.1,0,12.9-5.8,12.9-12.9c0-1-0.8-1.8-1.8-1.8H46.3z"
-                />
-              </svg>
+                  />
+                </svg>
+              </a>
               <h5 class="card-title">Wallpapering</h5>
             </div>
           </div>
@@ -285,6 +363,8 @@
           <a
             href="http://"
             role="button"
+            data-toggle="modal"
+            data-target="#contactModal"
             class="btn btn-outline-light btn-block py-4 my-4"
             ><h4>Request Free Quotation</h4></a
           >
@@ -294,7 +374,7 @@
     <section class="recent-work">
       <div class="container-fluid py-4">
         <h1 class="text-center py-4">Recent Work</h1>
-        <div class="row">
+        <div class="row mb-4">
           <div class="col-12 col-sm-6">
             <div class="card my-2">
               <div class="card-body">
@@ -337,6 +417,11 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-12">
+          <button class="btn btn-lg btn-block btn-outline-primary" href="recent-work.html">See More</button>
+        </div>
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+
 //add simple support for background images:
 document.addEventListener('lazybeforeunveil', function(e){
     var bg = e.target.getAttribute('data-bg');

@@ -18,45 +18,13 @@
     }
 }
 
-.recent-work {
-    .rw-image-01 {
-        background: url(/images/rw-image-01.jpg);
-        padding-top: calc((100% + 10px) *0.8 - 5px);
-        transform: scale3d(1.1,1.1,1);
-        width: 50%;
-    }
-    .rw-image-02 {
-        background: url(/images/rw-image-02.jpg);
-        padding-top: calc((100% + 10px) *0.8 - 5px);
-        transform: scale3d(1.1,1.1,1);
-        width: 50%;
+    .btn-outline-light {
+        &:hover {
+            color: $primary;
+            background-color: rgba(255, 255, 255, 0.2)!important;
+        }
     }
 
-    .rw-image-03 {
-        background: url(/images/rw-image-03.jpg) no-repeat;
-        padding-top: calc((100% + 10px) *0.8 - 5px);
-        transform: scale3d(1.1,1.1,1);
-        width: 50%;
-    }
-
-    .rw-image-04 {
-        background: url(/images/rw-image-04.jpg) no-repeat;
-        padding-top: calc((100% + 10px) *0.8 - 5px);
-        transform: scale3d(1.1,1.1,1);
-        width: 50%;
-    }
-
-    .rw-image-05 {
-        background: url(/images/rw-image-05.jpg) no-repeat;
-        padding-top: calc((100% + 10px) *0.8 - 5px);
-        transform: scale3d(1.1,1.1,1);
-        width: 50%;
-    }
-
-    .rw-image-06 {
-        background: url(/images/rw-image-06.jpg) no-repeat;
-        padding-top: calc((100% + 10px) *0.8 - 5px);
-        transform: scale3d(1.1,1.1,1);
-        width: 50%;
-    }
+.nav-link {
+    font-size: 1.2rem;;
 }
