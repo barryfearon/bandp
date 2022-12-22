@@ -8,7 +8,15 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="manifest" href="/manifest.json" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png" />
+    <link rel="icon" sizes="72x72" href="images/icons/icon-72x72.png" />
+    <link rel="icon" sizes="96x96" href="images/icons/icon-96x96.png" />
+    <link rel="icon" sizes="128x128" href="images/icons/icon-128x128.png" />
+    <link rel="icon" sizes="144x144" href="images/icons/icon-144x144.png" />
+    <link rel="icon" sizes="152x152" href="images/icons/icon-152x152.png" />
+    <link rel="icon" sizes="192x192" href="images/icons/icon-192x192.png" />
+    <link rel="icon" sizes="384x384" href="images/icons/icon-384x384.png" />
+    <link rel="icon" sizes="512x512" href="images/icons/icon-512x512.png" />
 
     <title>Buchannan & Pitts Ltd</title>
 
@@ -16,12 +24,11 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+      class="navbar flex-md-column navbar-expand-lg navbar-dark bg-primary"
       id="buchanan-pitts-nav"
     >
-      <a class="navbar-brand btn btn-outline-light" role="button" href="tel:+447624494332">Buchannan & Pitts: Call 07624 494332</a>
       <button
-        class="navbar-toggler"
+        class="navbar-toggler mr-auto"
         type="button"
         data-toggle="collapse"
         data-target="#buchanan-pitts-mobile-nav"
@@ -32,8 +39,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="buchanan-pitts-mobile-nav">
-        <ul class="navbar-nav ml-auto">
+      <div class="d-flex justify-content-center flex-grow-1 call-btn"></div>
+      <div class="collapse navbar-collapse mb-4" id="buchanan-pitts-mobile-nav">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
@@ -47,14 +55,34 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="about-us.html">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Recent Work</a>
+            <a class="nav-link" href="services.html">Services</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="">Recent Work</a>
+          </li> -->
         </ul>
       </div>
+      <div class="bg-primary d-flex flex-column flex-md-row justify-content-center align-items-center px-4 w-100" >
+        <img
+          src="./images/bandp-logo.png"
+          class="img-fluid m-3"
+          width="450"
+          height="auto"
+          alt="Buchannan & Pitts Logo"
+        />
+  
+        <a
+          class="navbar-brand btn btn-outline-light my-3 mx-3 mt-lg-0"
+          role="button"
+          href="tel:+447624469934"
+          >Call 07624 469934</a
+        >
+      </div>
     </nav>
+    
 
     <!-- Modal -->
     <div
@@ -70,7 +98,9 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header bg-primary">
-            <h5 class="modal-title text-white" id="staticBackdropLabel">Free Quotation</h5>
+            <h5 class="modal-title text-white" id="staticBackdropLabel">
+              Free Quotation
+            </h5>
             <button
               type="button"
               class="close text-white"
@@ -96,9 +126,7 @@
                 >
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1"
-                  >Message</label
-                >
+                <label for="exampleFormControlTextarea1">Message</label>
                 <textarea
                   class="form-control"
                   id="exampleFormControlTextarea1"
@@ -115,9 +143,7 @@
               >
                 Close
               </button>
-              <button type="submit" class="btn btn-primary">
-                Submit
-              </button>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </div>
           </form>
         </div>
@@ -135,13 +161,17 @@
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
             <img
-              src="./images/AdobeStock_294197092_Preview.jpg"
+              src="./images/bandp-carousel-001.jpg"
               alt="First slide"
               class="img-fluid"
             />
             <div class="image-bg"></div>
-            <div class="carousel-caption">
-              <h3 class="mb-4">Request A Free Non-Obligation Quote</h3>
+            <div
+              class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100"
+            >
+              <h3 class="mb-4 d-none d-md-flex">
+                Request A Free Non-Obligation Quote
+              </h3>
               <a
                 type="button"
                 data-toggle="modal"
@@ -154,34 +184,40 @@
           </div>
           <div class="carousel-item">
             <img
-              src="./images/AdobeStock_167197742_Preview.jpeg"
+              src="./images/bandp-carousel-002.jpg"
               alt="Second slide"
               class="img-fluid"
             />
             <div class="image-bg"></div>
-            <div class="carousel-caption">
-              <h3>Painting and Decorating Work</h3>
+            <div
+              class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100"
+            >
+              <h5 class="">Painting and Decorating Work</h5>
               <h6 class="mb-4">
                 View some of our recent painting and decorating work!
               </h6>
-              <a
+              <!-- <a
                 type="button"
                 role="button"
                 class="btn btn-lg btn-outline-primary"
                 >Visit Gallery</a
-              >
+              > -->
             </div>
           </div>
           <div class="carousel-item">
             <img
-              src="./images/AdobeStock_208767270_Preview.jpeg"
+              src="./images/bandp-carousel-003.jpg"
               alt="First slide"
               class="img-fluid"
             />
             <div class="image-bg"></div>
-            <div class="carousel-caption">
-              <h3>Professional Painting and Decorating Services</h3>
-              <h6 class="mb-4">
+            <div
+              class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100"
+            >
+              <h3 class="d-none d-md-flex">
+                Professional Painting and Decorating Services
+              </h3>
+              <h6 class="mb-4 d-none d-md-flex">
                 Decorating homes and businesses on the Isle of Man for over 40
                 years
               </h6>
@@ -199,60 +235,52 @@
     </section>
     <section class="preparation">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="services-prep">
           <div class="col-12 col-md-6 px-0 img-container prep"></div>
           <div class="col-12 col-md-6 pt-5">
             <h3 class="pt-3 pt-md-5">Preparation</h3>
             <hr />
             <p>
-              Preparation will always be the most important part of any job to
-              achieve an outstanding finish, if you dont do the prep correctly
-              you may as well pack up your kit and get in your van and leave.
-              All areas to be redecorated are sheeted up before commencing any
-              work. I carry out filling up to all cracks on ceilings, walls and
-              woodwork, all gaps and cracks around coving, window frames, door
-              frames, tops of skirting boards are raked out and then caulked up,
-              I strip off old wallpaper from ceilings and walls and if required
-              hang new lining paper to any defective surfaces. I use dust Free
-              sanding technology for the majority of sanding down. My attention
-              to detail is second to none.
+              Preparation is the most important part of any decorating project.
+              It has been said that preparation work is 70% with the actual task
+              of decorating being the remaining 30% We believe that a good
+              finish is not only down to the decorator but the effort that goes
+              into the preparation. From high pressure rinses or mechanically
+              sanding surfaces. This all helps to give the longevity and the
+              desired superior finish.
             </p>
           </div>
         </div>
         <div class="row" id="services-int">
-          <div class="col-12 col-md-6 pt-5 d-none d-md-block">
+          <div
+            class="col-12 col-md-6 pt-5 d-none d-md-block an_text_left animate__animated"
+          >
             <h3 class="pt-3 pt-md-5">Interior Painting</h3>
             <hr />
             <p>
-              I cover all aspects of interior painting and decorating, including
-              the painting of ceilings, covings and walls. Stain blocking to all
-              kinds of stains – from water stains to nicotine stains. The
-              painting of woodwork and metalwork using oil based paint or water
-              based paint – customers preference. All types of staining and
-              varnishing work are carried out. I use the best quality trade
-              paints to paint with, make no mistake trade paints are of a
-              superior quality to publicly available paints which makes for a
-              better finish and saves time required to complete a job, however I
-              have no issues if the customer wants to supply the paint.
+              We cover all aspects of interior painting and decorating, whether
+              it be adding a splash of colour in the basement or re painting
+              kitchen units, we have it covered. We understand that when our
+              customers open their doors to us we have a duty of care to respect
+              the privacy and cleanliness of the residents and their property
+              alike.
             </p>
           </div>
           <div
             class="col-12 col-md-6 px-0 img-container interior mt-5 mt-md-0"
           ></div>
-          <div class="col-12 col-md-6 pt-5 d-block d-md-none">
+          <div
+            class="col-12 col-md-6 pt-5 d-block d-md-none an_text_left animate__animated"
+          >
             <h3 class="pt-3 pt-md-5">Interior Painting</h3>
             <hr />
             <p>
-              I cover all aspects of interior painting and decorating, including
-              the painting of ceilings, covings and walls. Stain blocking to all
-              kinds of stains – from water stains to nicotine stains. The
-              painting of woodwork and metalwork using oil based paint or water
-              based paint – customers preference. All types of staining and
-              varnishing work are carried out. I use the best quality trade
-              paints to paint with, make no mistake trade paints are of a
-              superior quality to publicly available paints which makes for a
-              better finish and saves time required to complete a job, however I
-              have no issues if the customer wants to supply the paint.
+              We cover all aspects of interior painting and decorating, whether
+              it be adding a splash of colour in the basement or re painting
+              kitchen units, we have it covered. We understand that when our
+              customers open their doors to us we have a duty of care to respect
+              the privacy and cleanliness of the residents and their property
+              alike.
             </p>
           </div>
         </div>
@@ -260,42 +288,46 @@
           <div
             class="col-12 col-md-6 px-0 img-container exterior mt-5 mt-md-0"
           ></div>
-          <div class="col-12 col-md-6 pt-5">
+          <div class="col-12 col-md-6 pt-5 an_text_right animate__animated">
             <h3 class="pt-3 pt-md-5">Exterior Painting</h3>
             <hr />
             <p>
-              It’s not just the inside of the house that requires attention, the
-              exterior of your property is just as important. I cover all
-              aspects of exterior painting and decorating including the removal
-              of flaking paint with a hot air gun or paint stripper, wood
-              priming, painting of fascia boards, soffits, windows, guttering,
-              downpipes, cladding, wooden and metal doors, door frames,
-              varnishing, wood or metal fence painting, wood staining, and
-              masonry painting.
+              A house is a home and with that in mind it needs to look good on
+              the outside as well as inside. A clean finish is fundamental to
+              the up keep of the property – keeping the damp out and the warm
+              in!
+            </p>
+            <p>
+              We work closely with the Islands leading scaffold companies. We
+              can supply static or mobile scaffold or our own mobile hoist for
+              the hard to reach areas.
             </p>
           </div>
         </div>
         <div class="row" id="services-wall">
-          <div class="col-12 col-md-6 pt-5 d-none d-md-block">
+          <div
+            class="col-12 col-md-6 pt-5 d-none d-md-block an_text_left animate__animated"
+          >
             <h3 class="pt-3 pt-md-5">Wallpapering</h3>
             <hr />
             <p>
               Wallpapering takes skill and experience to achieve a great finish.
-              To achieve this all walls are filled up and then sanded down. Then
-              a coat of wallpaper size is applied to the walls and allowed to
-              dry. Then you plan where to start, on a feature wall I always
-              start in the middle of the wall and wallpaper outwards this allows
-              when finishing each side of the wall will have the same pattern
-              and look even. When wallpapering a whole room I start behind a
-              door or a chimney breast. Using a laser level to ensure you have a
-              perfect straight line to start wallpapering from, all lengths of
-              wallpaper are matched perfectly so no joins are seen.
+              Our team have a wealth of knowledge when it comes to giving advice
+              and fitting the right paper. From fabric wall coverings & printed
+              murals to preparatory papers we can fit it!
+            </p>
+            <p>
+              We also offer free measures for all accepted work. We can supply
+              you with a choice of papers or you may have bought a paper and
+              only need it us to hang it.
             </p>
           </div>
           <div
             class="col-12 col-md-6 px-0 img-container wallpaper mt-5 mt-md-0"
           ></div>
-          <div class="col-12 col-md-6 pt-5 d-block d-md-none">
+          <div
+            class="col-12 col-md-6 pt-5 d-block d-md-none an_text_left animate__animated"
+          >
             <h3 class="pt-3 pt-md-5">Wallpapering</h3>
             <hr />
             <p>
@@ -312,11 +344,109 @@
             </p>
           </div>
         </div>
+        <div class="row" id="services-ext">
+          <div
+            class="col-12 col-md-6 px-0 img-container exterior mt-5 mt-md-0"
+          ></div>
+          <div class="col-12 col-md-6 pt-5 an_text_right animate__animated">
+            <h3 class="pt-3 pt-md-5">Commercial &amp; Industrial</h3>
+            <hr />
+            <p>
+              As the largest painting and decorating contractors on the Island
+              we can cope with any size of project. In the past we have
+              decorated the Great Laxey Wheel - the world’s largest water wheel,
+              entire housing estates, Strand Shopping Centre, Ramsey Swing
+              Bridge and the complete exterior of Ronaldsway Airport to name a
+              few.
+            </p>
+            <p>
+              Buchanan & Pitts have the experience and knowhow to specify the
+              correct product and procedure for the task in hand.
+            </p>
+          </div>
+        </div>
+        <div class="row" id="services-wall">
+          <div
+            class="col-12 col-md-6 pt-5 d-none d-md-block an_text_left animate__animated"
+          >
+            <h3 class="pt-3 pt-md-5">Speciality Wood Grain & Signwriting</h3>
+            <hr />
+            <p>
+              Some say that graining and sign writing is a dying art. We
+              disagree – for us this is part of our heritage and should be
+              embraced. Refurbishment of the Isle of Man Steam, Electric &
+              Snaefell Railways rolling stock is part of our day today work.
+              This includes signwriting and lining out of trams or a train
+              carriages. We have decorators who carry these works out on the
+              Island.
+            </p>
+            <p>
+              Like many residents of the Island we pride ourselves in our
+              history. From signwriting doors at the Gaiety Theatre or
+              refurbishing the Great Camera Obscurer these projects are more
+              than just a job to us.
+            </p>
+          </div>
+          <div
+            class="col-12 col-md-6 px-0 img-container wallpaper mt-5 mt-md-0"
+          ></div>
+          <div
+            class="col-12 col-md-6 pt-5 d-block d-md-none an_text_left animate__animated"
+          >
+            <h3 class="pt-3 pt-md-5">Speciality Wood Grain & Signwriting</h3>
+            <hr />
+            <p>
+              Some say that graining and sign writing is a dying art. We
+              disagree – for us this is part of our heritage and should be
+              embraced. Refurbishment of the Isle of Man Steam, Electric &
+              Snaefell Railways rolling stock is part of our day today work.
+              This includes signwriting and lining out of trams or a train
+              carriages. We have decorators who carry these works out on the
+              Island.
+            </p>
+            <p>
+              Like many residents of the Island we pride ourselves in our
+              history. From signwriting doors at the Gaiety Theatre or
+              refurbishing the Great Camera Obscurer these projects are more
+              than just a job to us.
+            </p>
+          </div>
+        </div>
+        <div class="row" id="services-hs">
+          <div
+            class="col-12 col-md-6 px-0 img-container health-and-safety mt-5 mt-md-0"
+          ></div>
+          <div class="col-12 col-md-6 pt-5 an_text_right animate__animated">
+            <h3 class="pt-3 pt-md-5">Health &amp; Safety</h3>
+            <hr />
+            <p>
+              With fully trained CITB and IOSH staff members you can be sure
+              that your work will be carried out using the most up to date
+              health and safety practices. Below are a number of training
+              accreditations held within the company.
+            </p>
+            <ul>
+              <li>
+                IPAF up to 26 meters – Self Propelled Boom and Scissor Lift.
+              </li>
+              <li>NPORS – Sign Light and Guarding</li>
+              <li>Asbestos Awareness</li>
+              <li>First Aid</li>
+              <li>Working at Height</li>
+              <li>Abrasive Wheels</li>
+              <li>IOSH Working Safely</li>
+              <li>IOSH Managing Safely</li>
+              <li>CITB Site Manger</li>
+            </ul>
+            <p>
+              We believe that the safety and wellbeing of our customers and
+              employees is paramount. We carry out regular site visits and
+              provide Risk Assessments, Methods Statements & COSHH Assessments.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="interior-painting"></section>
-    <section class="exterior-painting"></section>
-    <section class="wallpapering"></section>
     <footer class="bg-dark py-2 px-3">
       <div class="container-fluid">
         <div class="row">
@@ -349,14 +479,13 @@
         </div>
       </div>
     </footer>
-    <script src="./runtime.bundle.js"></script>
-    <script src="./npm.webpack.bundle.js"></script>
-    <script src="./npm.style-loader.bundle.js"></script>
-    <script src="./npm.css-loader.bundle.js"></script>
-    <script src="./npm.bootstrap.bundle.js" defer></script>
-    <script src="./npm.jquery.bundle.js" defer></script>
-    <script src="./npm.popper.js.bundle.js" defer></script>
-    <script src="./npm.lazysizes.bundle.js" defer></script>
-    <script src="./main.bundle.js" defer></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.2.6/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
   </body>
 </html>

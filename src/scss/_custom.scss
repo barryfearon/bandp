@@ -1,7 +1,5 @@
-
 .carousel-caption {
-    bottom: 80px;
-    bottom: 35%;
+    bottom: 0%;
 }
 
 .carousel-item {
@@ -26,5 +24,17 @@
     }
 
 .nav-link {
-    font-size: 1.2rem;;
+    font-size: 1.2rem;
+    text-align: center;
 }
+
+.call-btn {
+    width: 33.334%;
+}
+
+// .animate__animated {
+
+//     &.animate__fadeInTopLeft {}
+//     &.animate__fadeInDown {}
+//     &
+// }
